@@ -6,6 +6,7 @@ from LukaUtils import ModGramSchmidt, NormalEquation, HouseHolder, TurnHumanInto
 
 # Streamlit header and explanations
 st.title("Human Lifespan Prediction App")
+st.subheader("Author : Luka Gorgadze")
 st.write("This app generates and predicts the lifespan of human individuals based on their characteristics.")
 st.write("Choose a program mode, and the app will generate random human data and make predictions.")
 
