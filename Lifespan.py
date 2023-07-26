@@ -98,7 +98,7 @@ print("Normal Equation - 0")
 print("Modified GramSchmidt - 1")
 print("HouseHolder - 2")
 mode = int(input("Choose: "))
-people = GenerateHumans(100,"Data-1\ElvenFirstNames.txt","Data-1\ElvenLastNames.txt")
+people = GenerateHumans(100,"Data-1/ElvenFirstNames.txt","Data-1/ElvenLastNames.txt")
 for human in people:
     print(human)
 
