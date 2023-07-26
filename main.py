@@ -90,7 +90,7 @@ def GenerateHumans(PeopleAmount, fNamesPath, lNamesPath):
 st.sidebar.header("Choose Program Mode:")
 mode = st.sidebar.radio("Select mode:", ["Normal Equation", "Modified GramSchmidt", "HouseHolder"])
 
-people = GenerateHumans(100, "Data-1\ElvenFirstNames.txt", "Data-1\ElvenLastNames.txt")
+people = GenerateHumans(100, "ElvenFirstNames.txt", "ElvenLastNames.txt")
 
 # Display generated human data in a table
 st.header("Generated Human Data")
@@ -134,7 +134,7 @@ st.write(f"{hoomanName} is predicted to live {res} years.")
 xpoints = np.array(list(range(len(people))))
 ypoints = np.array([human.getLifeSpan() for human in people])
 
-experimentPeople = GenerateHumans(50, "Data-1\ElvenFirstNames.txt", "Data-1\ElvenLastNames.txt")
+experimentPeople = GenerateHumans(50, "ElvenFirstNames.txt", "ElvenLastNames.txt")
 newXpoints = np.array(list(range(len(experimentPeople))))
 newYpoints = np.array([int(np.matmul(TurnHumanIntoMatrix(human), x)) for human in experimentPeople])
 
