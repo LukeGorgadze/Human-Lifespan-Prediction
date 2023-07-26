@@ -143,7 +143,7 @@ xpoints = np.array(xpoints)
 ypoints = list(map(lambda human : human.getLifeSpan() ,people))
 ypoints = np.array(ypoints)
 
-experimentPeople = GenerateHumans(50,"Data-1\ElvenFirstNames.txt","Data-1\ElvenLastNames.txt")
+experimentPeople = GenerateHumans(50,"Data-1/ElvenFirstNames.txt","Data-1/ElvenLastNames.txt")
 newXpoints = list(map(lambda human:human[0],enumerate(experimentPeople)))
 newXpoints = np.array(newXpoints)
 newYpoints = list(map(lambda human : int(np.matmul(TurnHumanIntoMatrix(human),x)) ,experimentPeople))
